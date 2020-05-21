@@ -53,5 +53,5 @@ What **not** to do:
 - **opencv-python** 4.2.0.34 
 ## Roadmap
 
-I plan on adding more features and better optimizaion down the line. But the most important thing I need to implement as of now is catching all the exceptions.  
+I plan on adding more features and better optimization down the line. But the most important thing I need to implement as of now is catching all the exceptions.  
 These codes *don't* catch any exceptions now, so you will encounter some errors thrown in your way. I will actively add exceptions as time allows.
