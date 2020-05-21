@@ -5,7 +5,7 @@ This is achieved by utilizing Tesseract Optical Character Recognition technology
 
 ## Usage
 Unfortunately, it can only be used on a small chunk of the menu at a time. It also can't be used on poor quality pictures or photos, because of the OCR technology limitations. 
-* First, you need to make sure the image is parsable. A region of the menu must be chunked out and rows should be distinct.  
+* _First_, you need to make sure the image is parsable. A region of the menu must be chunked out and rows should be distinct.  
 For example, you *have* to chunk the region like this:  
 `Something Delicious        1.99`  
 `Something Really Delicious 13.99`  
@@ -13,7 +13,7 @@ For example, you *have* to chunk the region like this:
 It does not have to have aligned columns.  
 What **not** to do:
 `Something Delicious   1.99   Something Really Delicious 13.99`
-* Second, make sure to have your image file within the same directory as the main folder, and run like this.
+* _Second_, make sure to have your image file within the same directory as the main folder, and run like this.
  `MenuParser.py [image_file] --output [destination_file]`  
  This runs the raw picture without any image manipulation. See if this works out well. If not, proceed.  
  There are arguments which can help with the OCR accuracy: **denoise** and **greyscale**.  
@@ -22,7 +22,7 @@ What **not** to do:
  These features don't *always* grant better results. Please use best judgement after playing around with the settings.  
  **Denoise**: `-d, --denoise` ie: `MenuParser.py [image_file] --output [destination_file.txt] -d`  
  **Greyscale**: `-g, --greyscale` ie: `MenuParser.py [image_file] --output [destination_file] -g` 
- * Third, you will have two files in `output` folder: `[destination_file.txt]` and `[destination_file.txt]_parsed.JSON`  
+ * _Third_, you will have two files in `output` folder: `[destination_file.txt]` and `[destination_file.txt]_parsed.JSON`  
  The JSON file is very easy to work with, but do check the .txt file as well for more accuracy.  
  
 ## Parsing in Action
@@ -43,7 +43,7 @@ What **not** to do:
 
 ![json.png](https://i.imgur.com/1TZeqke.png)  
 
-As you can see, the OCR is far from perfect. You *will* have to do some tweaking before copying and pasting.
+### As you can see, the OCR is far from perfect. You *will* have to do some tweaking before copying and pasting. However, this is far better than having to manually input letter by letter.
 
 ## Requirements
 
