@@ -13,7 +13,7 @@ For example, you *have* to chunk the region like this:
 It does not have to have aligned columns.  
 What **not** to do:
 `Something Delicious   1.99   Something Really Delicious 13.99`
-* _Second_, make sure to have your image file within the same directory as the main folder, and run like this.
+* _Second_, make sure to have your image file within the same directory as the main folder, and run like this.  
  `MenuParser.py [image_file] --output [destination_file]`  
  This runs the raw picture without any image manipulation. See if this works out well. If not, proceed.  
  There are arguments which can help with the OCR accuracy: **denoise** and **greyscale**.  
