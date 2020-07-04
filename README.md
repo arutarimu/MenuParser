@@ -13,7 +13,7 @@ For example, you *have* to chunk the region like this:
 It does not have to have aligned columns.  
 What **not** to do:
 `Something Delicious   1.99   Something Really Delicious 13.99`
-* _Second_, make sure to have your image file within the same directory as the main folder, and run like this.
+* _Second_, make sure to have your image file within the same directory as the main folder, and run like this.  
  `MenuParser.py [image_file] --output [destination_file]`  
  This runs the raw picture without any image manipulation. See if this works out well. If not, proceed.  
  There are arguments which can help with the OCR accuracy: **denoise** and **greyscale**.  
@@ -53,5 +53,5 @@ What **not** to do:
 - **opencv-python** 4.2.0.34 
 ## Roadmap
 
-I plan on adding more features and better optimizaion down the line. But the most important thing I need to implement as of now is catching all the exceptions.  
+I plan on adding more features and better optimization down the line. But the most important thing I need to implement as of now is catching all the exceptions.  
 These codes *don't* catch any exceptions now, so you will encounter some errors thrown in your way. I will actively add exceptions as time allows.
