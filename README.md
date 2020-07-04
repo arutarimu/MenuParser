@@ -50,8 +50,8 @@ What **not** to do:
 - **Python 3.6.5** or higher
 - **Tesseract 3.x** or higher for Linux, **Tesseract 5.0** for Windows
 - **pytesseract** 0.3.4
-- **opencv-python** 4.2.0.34 
-## Roadmap
+- **opencv-python** 4.2.0.34  
 
-I plan on adding more features and better optimization down the line. But the most important thing I need to implement as of now is catching all the exceptions.  
-These codes *don't* catch any exceptions now, so you will encounter some errors thrown in your way. I will actively add exceptions as time allows.
+## Update  
+
+07/03/2020 - Added Exceptions
