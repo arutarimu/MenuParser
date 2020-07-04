@@ -25,6 +25,9 @@ try:
     parser.add_argument("-d", "--denoise", action="store_true", help="Uses OpenCV Denoising")
     parser.add_argument("--output", required=True, help="Sets output file name")
     args = parser.parse_args()
+
+    # This if-statement is important as Exception is NOT thrown for not finding an image file.
+    # OpenCV down the line will just pass the object as None, which is not detectable by try-except
     if not path.exists(args.image):
         raise FileNotFoundError
     image = cv.imread(args.image)  # Loading the image passed through the argument to OpenCV
