@@ -25,7 +25,7 @@ def match(line):  # This function is the heavy lifter for parsing. It uses RegEx
     words = line.split()
     name, price, i = "", "", 0  # i is used to track of iteration number
     for word in words:
-        if re.match(r"^\d+([\,\.]\d\d)$", word):  # this RegEx only finds 9.99, 99.99, 999.99 ... so forth.
+        if re.match(r"^\d+([,.]\d\d)$", word):  # this RegEx only finds 9.99, 99.99, 999.99 ... so forth.
             price = words[i]  # the iteration number must be the index since RegEx got a hit.
             return name, price  # returns name and price, both at the same time in a list.
         name = name + word + " "
